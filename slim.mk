@@ -2,6 +2,9 @@ $(call inherit-product, device/lge/d851/full_d851.mk)
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 
+# Overlays (inherit after vendor/slim to ensure we override it)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 1440
 TARGET_SCREEN_HEIGHT := 2560
