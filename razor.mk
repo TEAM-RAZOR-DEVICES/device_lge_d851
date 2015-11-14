@@ -1,8 +1,6 @@
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 $(call inherit-product, device/lge/d851/full_d851.mk)
-
-$(call inherit-product, device/lge/d851/full_d851.mk)
 $(call inherit-product, vendor/razor/config/common_full_phone.mk)
 $(call inherit-product, vendor/razor/config/nfc_enhanced.mk)
 
